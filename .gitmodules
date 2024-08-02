@@ -1,0 +1,3 @@
+[submodule "prompt_tuning/llama-recipes"]
+	path = prompt_tuning/llama-recipes
+	url = https://github.com/meta-llama/llama-recipes.git
