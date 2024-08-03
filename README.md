@@ -26,5 +26,14 @@ Go to [Meta Llama download link](https://llama.meta.com/llama-downloads/) to dow
 
 **Table 1**: Comparison of models with different parameters and tuning methods under BLEU and ROUGE metrics. The GPT4.0 Expert Prompt-tuning and GPT3.5 finetuning yield the best and the second best result, respectively, across each metric.
 
+
+| **Tuning Type** | **Model & Prompt Type** | **A** | **B** | **C** |
+|-----------------|-------------------------|-------|-------|-------|
+| **Prompt-tune** | **GPT4.0 Expert**       | **0.98** | 0.59  | 0.56  |
+| **Fine-tune**   | **GPT3.5-turbo**        | 0.98  | 0.26  | 0.22  |
+|                 | **LLAMA2-7b**           | 0.96  | **0.62** | **0.60** |
+|                 | **LLAMA2-13b**          | 0.97  | 0.56  | 0.52  |
+
+**Table 2**: Verification scores of different model types. Metric A: Proportion of valid SMILES; Metric B: Proportion of correctly verified mole values; Metric C: Average yield estimation correctness.
 ###
 
