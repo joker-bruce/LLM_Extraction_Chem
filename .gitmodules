@@ -1,3 +1,6 @@
 [submodule "prompt_tuning/llama-recipes"]
 	path = prompt_tuning/llama-recipes
-	url = https://github.com/meta-llama/llama-recipes.git
+	url = git@github.com:joker-bruce/llama-recipes.git
+[submodule "finetuning/llama-recipes"]
+	path = finetuning/llama-recipes
+	url = git@github.com:joker-bruce/llama-recipes.git
