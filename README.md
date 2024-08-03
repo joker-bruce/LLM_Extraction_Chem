@@ -19,12 +19,12 @@ Go to [Meta Llama download link](https://llama.meta.com/llama-downloads/) to dow
 |                 | **LLAMA2-13b Expert**    | 47.41         | 0.03       | 0.63        | 0.43        | 0.55        |
 |                 | **LLAMA2-70b Expert**    | 50.00         | 0.03       | 0.66        | 0.48        | 0.59        |
 |                 | **GPT3.5-turbo Expert**  | 75.22         | 0.16       | 0.83        | 0.73        | 0.74        |
-|                 | **GPT4.0 Expert**        | <span style="color:red">**98.62**</span>    | **0.45**   | **0.98**    | **0.98**    | **0.98**    |
+|                 | **GPT4.0 Expert**        | **98.62**     | **0.45**   | **0.98**    | **0.98**    | **0.98**    |
 | **Fine-tune**   | **GPT3.5-turbo**         | _84.14_       | _0.20_     | _0.89_      | _0.83_      | _0.85_      |
 |                 | **LLAMA2-7b**            | 41.36         | 0.05       | 0.62        | 0.58        | 0.58        |
 |                 | **LLAMA2-13b**           | 77.50         | 0.04       | 0.83        | 0.75        | 0.77        |
 
-**Table 1**: Comparison of models with different parameters and tuning methods under BLEU and ROUGE metrics. Bold and underline are the best and the second best result, respectively, across each metric.
+**Table 1**: Comparison of models with different parameters and tuning methods under BLEU and ROUGE metrics. The GPT4.0 Expert Prompt-tuning and GPT3.5 finetuning yield the best and the second best result, respectively, across each metric.
 
 ###
 
