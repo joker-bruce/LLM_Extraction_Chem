@@ -7,7 +7,7 @@ Please go for the [promopt-tuning/llama](https://github.com/joker-bruce/LLM_Extr
 #### GPT Prompt-tuning
 Please go for the [promopt-tuning/GPT](https://github.com/joker-bruce/LLM_Extraction_Chem/tree/main/prompt_tuning/GPT) folder for more details
 #### LLama finetuning
-Please go for the [finetuning](https://github.com/joker-bruce/LLM_Extraction_Chem/tree/main/finetuning) folder for more details
+Please go for the [finetuning](https://github.com/joker-bruce/LLM_Extraction_Chem/tree/main/finetuning) folder for more details.  
 Go to [Meta Llama download link](https://llama.meta.com/llama-downloads/) to download models and place them into `models` folder
 
 ### Pipeline
