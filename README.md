@@ -3,11 +3,15 @@
 In the realm of chemistry, literature texts elucidating chemical reactions are crucial for tasks such as yield prediction, reaction prediction, and reaction condition recommendation. However, extracting structured data from these texts is challenging. Our paper explores the use of Large Language Models (LLMs) to process unstructured chemical reaction data. We manually curated a dataset to fine-tune LLMs, including LLAMA-2 and GPT models, and employed techniques like prompt-tuning and fine-tuning. Our results show that prompt-tuning GPT-4 yields the highest accuracy. We also introduced a verification step using external APIs to authenticate extracted data. This work demonstrates the potential of LLMs in enhancing data-driven chemistry.
 ### Setup
 #### Llama Prompt-tuning
-You can follow [this](https://github.com/meta-llama/llama-recipes/tree/main) to setup the proper environment for the llama-2 or you can try clone this repo and do the following
-```
-pip install -r requirements.txt
-```
+Please go for the [promopt-tuning/llama](https://github.com/joker-bruce/LLM_Extraction_Chem/tree/main/prompt_tuning/llama) folder for more details
+#### GPT Prompt-tuning
+Please go for the [promopt-tuning/GPT](https://github.com/joker-bruce/LLM_Extraction_Chem/tree/main/prompt_tuning/GPT) folder for more details
+#### LLama finetuning
+Please go for the [finetuning](https://github.com/joker-bruce/LLM_Extraction_Chem/tree/main/finetuning) folder for more details
 Go to [Meta Llama download link](https://llama.meta.com/llama-downloads/) to download models and place them into `models` folder
+
+### Pipeline
+
 ### Result
 | **Tuning Type** | **Model & Prompt Type** | **SacreBLEU** | **BLEU-1** | **ROUGE-1** | **ROUGE-2** | **ROUGE-L** |
 |-----------------|-------------------------|---------------|------------|-------------|-------------|-------------|
