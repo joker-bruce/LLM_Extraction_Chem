@@ -11,7 +11,7 @@ Please go for the [finetuning](https://github.com/joker-bruce/LLM_Extraction_Che
 Go to [Meta Llama download link](https://llama.meta.com/llama-downloads/) to download models and place them into `models` folder
 
 ### Pipeline
-
+![workflow](image/workflow.png)
 ### Result
 | **Tuning Type** | **Model & Prompt Type** | **SacreBLEU** | **BLEU-1** | **ROUGE-1** | **ROUGE-2** | **ROUGE-L** |
 |-----------------|-------------------------|---------------|------------|-------------|-------------|-------------|
