@@ -11,5 +11,5 @@ we run the code on 4 A100 cards. For Llama2-7b-chat, we run the inference with o
 ```
 #example with 13b model
 source pt-venv/bin/activate
-torchrun --nproc_per_node 2 expert_prompt_completion.py --ckpt_dir model_directory --tokenizer_path tokenizer.model --max_seq_len 4096
+torchrun --nproc_per_node 2 prompt_tuning_llama.py --prompt_type no_prompt --chem_file location-of-the-reaction-info-file --ckpt_dir model_directory --tokenizer_path tokenizer.model --max_seq_len 4096
 ```
