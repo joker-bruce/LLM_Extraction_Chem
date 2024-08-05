@@ -13,3 +13,4 @@ we run the code on 4 A100 cards. For Llama2-7b-chat, we run the inference with o
 source pt-venv/bin/activate
 torchrun --nproc_per_node 2 prompt_tuning_llama.py --prompt_type no_prompt --chem_file location-of-the-reaction-info-file --ckpt_dir model_directory --tokenizer_path tokenizer.model --max_seq_len 4096
 ```
+There will also be an output csv file with output as a new column to the original csv file.
