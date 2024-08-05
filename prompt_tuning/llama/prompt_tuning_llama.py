@@ -8,6 +8,8 @@ import math
 from llama import Llama, Dialog
 import pandas as pd
 def main(
+    chem_file:str,
+    prompt_type: str,
     ckpt_dir: str,
     tokenizer_path: str,
     temperature: float = 0.6,
@@ -20,6 +22,8 @@ def main(
     Entry point of the program for generating text using a pretrained model.
 
     Args:
+        chem_file (str): csv file for the extracting the reaction data.
+        prompt_type (str): prompt type for tuning the pretrained model
         ckpt_dir (str): The directory containing checkpoint files for the pretrained model.
         tokenizer_path (str): The path to the tokenizer model used for text encoding/decoding.
         temperature (float, optional): The temperature value for controlling randomness in generation.
@@ -37,18 +41,15 @@ def main(
         max_seq_len=max_seq_len,
         max_batch_size=max_batch_size,
     )
+    if prompt_type not in ['no_prompt', 'moderate', 'expert']:
+        raise ValueError(f"Invalid prompt_type: {prompt_type}. Allowed values are 'no_prompt', 'moderate', 'expert'.")
 
-    df = pd.read_csv('/afs/crc.nd.edu/user/x/xhuang2/llama_test/llama-recipes/recipes/finetuning/datasets/combined_finetuning_data_test.csv')
+    df = pd.read_csv(chem_file)
     promptsArray = df['input'].tolist()
     for i in range(len(promptsArray)):
         if len(promptsArray[i]) > 2000:
             promptsArray[i] = promptsArray[i][:2000]
-
-    dialogs1: List[Dialog] = [
-        [
-            {
-                "role": "system",
-                "content": '''You are a chemical reaction data formatter. You will be provided unstructured data about the procedure for performing a chemical reaction and partially structured data about the molecules involved to convert into a single formatted JSON. I will give you the format of the required JSON and short descriptions of what is required in these fields. Here is the format of the JSON file, with a description of the required information:
+    expert = '''You are a chemical reaction data formatter. You will be provided unstructured data about the procedure for performing a chemical reaction and partially structured data about the molecules involved to convert into a single formatted JSON. I will give you the format of the required JSON and short descriptions of what is required in these fields. Here is the format of the JSON file, with a description of the required information:
 
  {{
     "reactants": [
@@ -101,6 +102,52 @@ def main(
 Few more guidelines:
 Please interpolate between various parts of the given data, and feel free to use reasoning about chemicals, but do not add any extra information in this cleaned JSON. If any information is missing, use "N/A". If there seems to be an information mismatch between the structured and unstructured parts, inform accordingly. Most importantly, only output the formatted JSON and nothing else. Most importantly, only output the formatted JSON and nothing else.
 '''
+    moderate = """
+Input: Chemical reaction description
+
+Output: JSON format containing the following fields:
+{
+    "reactants": [
+        {
+            "name": "Reactant name",
+            "amount": "Reactant amount"
+        },
+        {
+            "name": "Reactant name",
+            "amount": "Reactant amount"
+        },
+        ...
+    ],
+    "products": [
+        {
+            "name": "Product name",
+            "amount": "Product amount"
+        },
+        {
+            "name": "Product name",
+            "amount": "Product amount"
+        },
+        ...
+    ],
+    "temperatures": [
+        "Temperature 1",
+        "Temperature 2",
+        ...
+    ],
+    "procedures": "Procedure description",
+    "total_time": "Total amount of time for reaction"
+} 
+If any information is not found, you can use "NaN" or leave the field empty in the output JSON.        
+                """
+    no_prompt = """
+                        Could you format the previous message into Json with the reactants:reactant amount, products:product amount, temperatures: temperature amount,  procedures, and total amount of time for reaction?
+                        """
+    pt = {"no_prompt":no_prompt, "moderate":moderate, "expert":expert}
+    dialogs1: List[Dialog] = [
+        [
+            {
+                "role": "system",
+                "content": pt[prompt_type]
                 ,
             },
             {"role": "user", "content": f"""
@@ -126,7 +173,7 @@ Please interpolate between various parts of the given data, and feel free to use
             temp.append({result['generation']['content']})
     df['extracted'] = temp
     fn = ckpt_dir.split('/')[0]  
-    df.to_csv(f'chat_expert_{fn}.csv')
+    df.to_csv(f'{prompt_type}_{fn}.csv')
 
 if __name__ == "__main__":
     fire.Fire(main)
