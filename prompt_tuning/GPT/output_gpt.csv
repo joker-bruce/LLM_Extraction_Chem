@@ -1,0 +1,88 @@
+,reaction_class,Unnamed: 0,smiles,text,action,molecules_reactants,molecules_products,index,input,extracted
+0,801,18084,OC(=O)[C@H]([CH2]C1=[CH][NH]C2=[CH][CH]=[CH][CH]=C12)[NH]C(=O)O[CH2][CH]1C2=[CH][CH]=[CH][CH]=C2C2=[CH][CH]=[CH][CH]=C21.ON1C(=O)CCC1=O.Cl.CCN=C=NCCCN(C)C.CCN(C(C)C)C(C)C.[CH3]C([CH3])([CH3])SS[CH2][C@H]([NH2])C(=O)[OH].Cl.ClCCl>>[CH3]C([CH3])([CH3])SS[CH2][C@H]([NH]C(=O)[C@H]([CH2]C1=[CH][NH]C2=[CH][CH]=[CH][CH]=C12)[NH]C(=O)O[CH2][CH]1C2=[CH][CH]=[CH][CH]=C2C2=C1[CH]=[CH][CH]=[CH]2)C(=O)[OH],"A solution of Fmoc-Trp-OH (5 g, 11.72 mmol) and N-hydroxysuccinimide (1.35 g, 11.72 mmol) in dichloromethane (23 ml) was cooled to 0° C., after which 1-(3-dimethylaminopropyl)-3-ethylcarbodiimide hydrochloride (EDC.HCl, 2.25 g, 11.72 mmol) was added and the reaction solution was stirred at room temperature for 5.5 hours. The reaction solution was cooled to 0° C., after which N,N-diisopropylethylamine (2.05 ml, 11.72 mmol) and H-Cys(StBu)-OH (2.45 g, 11.72 mmol) were added and the reaction solution was stirred at room temperature for 14 hours. Dichloromethane and 1 M hydrochloric acid were added to the reaction mixture, followed by extraction with dichloromethane. The organic layer was washed with 25 wt % brine and dried over sodium sulfate. The resulting solution was concentrated under reduced pressure, and the concentration residue was purified by reverse-phase silica gel column chromatography (0.1% aqueous formic acid solution/0.1% formic acid-acetonitrile solution) to afford (5S,8R)-5-((1H-indol-3-yl)methyl)-1-(9H-fluoren-9-yl)-12,12-dimethyl-3,6-dioxo-2-oxa-10,11-dithia-4,7-diazatridecane-8-carboxylic acid (Compound SP602, Fmoc-Trp-Cys(StBu)-OH) (4.15 g, 57%).","[{'action': 'Cool', 'phrase_text': 'A solution of Fmoc-Trp-OH (5 g, 11.72 mmol) and N-hydroxysuccinimide (1.35 g, 11.72 mmol) in dichloromethane (23 ml) was cooled to 0° C.', 'chemicals_involved': [{'ref': 'm1'}, {'ref': 'm2'}, {'ref': 'm7'}]}, {'action': 'Add', 'phrase_text': 'after which 1-(3-dimethylaminopropyl)-3-ethylcarbodiimide hydrochloride (EDC.HCl, 2.25 g, 11.72 mmol) was added', 'chemicals_involved': [{'ref': 'm3'}]}, {'action': 'Stir', 'phrase_text': 'the reaction solution was stirred at room temperature for 5.5 hours', 'chemicals_involved': []}, {'action': 'Cool', 'phrase_text': 'The reaction solution was cooled to 0° C.', 'chemicals_involved': []}, {'action': 'Add', 'phrase_text': 'after which N,N-diisopropylethylamine (2.05 ml, 11.72 mmol) and H-Cys(StBu)-OH (2.45 g, 11.72 mmol) were added', 'chemicals_involved': [{'ref': 'm4'}, {'ref': 'm5'}]}, {'action': 'Stir', 'phrase_text': 'the reaction solution was stirred at room temperature for 14 hours', 'chemicals_involved': []}, {'action': 'Add', 'phrase_text': 'Dichloromethane and 1 M hydrochloric acid were added to the reaction mixture', 'chemicals_involved': [{'ref': 'm8'}, {'ref': 'm6'}]}, {'action': 'Extract', 'phrase_text': 'followed by extraction with dichloromethane', 'chemicals_involved': []}, {'action': 'Wash', 'phrase_text': 'The organic layer was washed with 25 wt % brine', 'chemicals_involved': []}, {'action': 'Dry', 'phrase_text': 'dried over sodium sulfate', 'chemicals_involved': []}, {'action': 'Concentrate', 'phrase_text': 'The resulting solution was concentrated under reduced pressure', 'chemicals_involved': []}, {'action': 'Purify', 'phrase_text': 'the concentration residue was purified by reverse-phase silica gel column chromatography (0.1% aqueous formic acid solution/0.1% formic acid-acetonitrile solution)', 'chemicals_involved': []}, {'action': 'Yield', 'phrase_text': 'to afford (5S,8R)-5-((1H-indol-3-yl)methyl)-1-(9H-fluoren-9-yl)-12,12-dimethyl-3,6-dioxo-2-oxa-10,11-dithia-4,7-diazatridecane-8-carboxylic acid (Compound SP602, Fmoc-Trp-Cys(StBu)-OH) (4.15 g, 57%)', 'chemicals_involved': [{'ref': 'm0'}]}]","[{'m1': {'name': 'Fmoc-Trp-OH', 'smiles': 'N([C@@H](CC1=CNC2=CC=CC=C12)C(=O)O)C(=O)OCC1C2=CC=CC=C2C2=CC=CC=C12', 'amount': '11.72 mmol', 'mass': '5 g'}}, {'m2': {'name': 'N-hydroxysuccinimide', 'smiles': 'ON1C(CCC1=O)=O', 'amount': '11.72 mmol', 'mass': '1.35 g'}}, {'m3': {'name': '1-(3-dimethylaminopropyl)-3-ethylcarbodiimide hydrochloride', 'smiles': 'Cl.CN(CCCN=C=NCC)C', 'amount': '11.72 mmol', 'mass': '2.25 g'}}, {'m4': {'name': 'N,N-diisopropylethylamine', 'smiles': 'C(C)(C)N(C(C)C)CC', 'amount': '11.72 mmol', 'volume': '2.05 ml'}}, {'m5': {'name': 'H-Cys(StBu)-OH', 'smiles': 'N[C@@H](CSSC(C)(C)C)C(=O)O', 'amount': '11.72 mmol', 'mass': '2.45 g'}}, {'m6': {'name': 'hydrochloric acid', 'smiles': 'Cl'}}]","[{'m0': {'product_name': '(5S,8R)-5-((1H-indol-3-yl)methyl)-1-(9H-fluoren-9-yl)-12,12-dimethyl-3,6-dioxo-2-oxa-10,11-dithia-4,7-diazatridecane-8-carboxylic acid', 'mass': '4.15 g', 'calculated_percent_yield': '57.3', 'smiles': 'N1C=C(C2=CC=CC=C12)C[C@H](NC(OCC1C2=CC=CC=C2C=2C=CC=CC12)=O)C(N[C@@H](CSSC(C)(C)C)C(=O)O)=O'}}]",18084,"[{'m1': {'name': 'Fmoc-Trp-OH', 'smiles': 'N([C@@H](CC1=CNC2=CC=CC=C12)C(=O)O)C(=O)OCC1C2=CC=CC=C2C2=CC=CC=C12', 'amount': '11.72 mmol', 'mass': '5 g'}}, {'m2': {'name': 'N-hydroxysuccinimide', 'smiles': 'ON1C(CCC1=O)=O', 'amount': '11.72 mmol', 'mass': '1.35 g'}}, {'m3': {'name': '1-(3-dimethylaminopropyl)-3-ethylcarbodiimide hydrochloride', 'smiles': 'Cl.CN(CCCN=C=NCC)C', 'amount': '11.72 mmol', 'mass': '2.25 g'}}, {'m4': {'name': 'N,N-diisopropylethylamine', 'smiles': 'C(C)(C)N(C(C)C)CC', 'amount': '11.72 mmol', 'volume': '2.05 ml'}}, {'m5': {'name': 'H-Cys(StBu)-OH', 'smiles': 'N[C@@H](CSSC(C)(C)C)C(=O)O', 'amount': '11.72 mmol', 'mass': '2.45 g'}}, {'m6': {'name': 'hydrochloric acid', 'smiles': 'Cl'}}] [{'m0': {'product_name': '(5S,8R)-5-((1H-indol-3-yl)methyl)-1-(9H-fluoren-9-yl)-12,12-dimethyl-3,6-dioxo-2-oxa-10,11-dithia-4,7-diazatridecane-8-carboxylic acid', 'mass': '4.15 g', 'calculated_percent_yield': '57.3', 'smiles': 'N1C=C(C2=CC=CC=C12)C[C@H](NC(OCC1C2=CC=CC=C2C=2C=CC=CC12)=O)C(N[C@@H](CSSC(C)(C)C)C(=O)O)=O'}}] A solution of Fmoc-Trp-OH (5 g, 11.72 mmol) and N-hydroxysuccinimide (1.35 g, 11.72 mmol) in dichloromethane (23 ml) was cooled to 0° C., after which 1-(3-dimethylaminopropyl)-3-ethylcarbodiimide hydrochloride (EDC.HCl, 2.25 g, 11.72 mmol) was added and the reaction solution was stirred at room temperature for 5.5 hours. The reaction solution was cooled to 0° C., after which N,N-diisopropylethylamine (2.05 ml, 11.72 mmol) and H-Cys(StBu)-OH (2.45 g, 11.72 mmol) were added and the reaction solution was stirred at room temperature for 14 hours. Dichloromethane and 1 M hydrochloric acid were added to the reaction mixture, followed by extraction with dichloromethane. The organic layer was washed with 25 wt % brine and dried over sodium sulfate. The resulting solution was concentrated under reduced pressure, and the concentration residue was purified by reverse-phase silica gel column chromatography (0.1% aqueous formic acid solution/0.1% formic acid-acetonitrile solution) to afford (5S,8R)-5-((1H-indol-3-yl)methyl)-1-(9H-fluoren-9-yl)-12,12-dimethyl-3,6-dioxo-2-oxa-10,11-dithia-4,7-diazatridecane-8-carboxylic acid (Compound SP602, Fmoc-Trp-Cys(StBu)-OH) (4.15 g, 57%).","{
+    ""reactants"": [
+        {
+            ""name"": ""Fmoc-Trp-OH"",
+            ""amount"": ""5 g"",
+            ""mols"": ""11.72 mmol"",
+            ""smiles"": ""N([C@@H](CC1=CNC2=CC=CC=C12)C(=O)O)C(=O)OCC1C2=CC=CC=C2C2=CC=CC=C12""
+        },
+        {
+            ""name"": ""N-hydroxysuccinimide"",
+            ""amount"": ""1.35 g"",
+            ""mols"": ""11.72 mmol"",
+            ""smiles"": ""ON1C(CCC1=O)=O""
+        },
+        {
+            ""name"": ""1-(3-dimethylaminopropyl)-3-ethylcarbodiimide hydrochloride"",
+            ""amount"": ""2.25 g"",
+            ""mols"": ""11.72 mmol"",
+            ""smiles"": ""Cl.CN(CCCN=C=NCC)C""
+        },
+        {
+            ""name"": ""N,N-diisopropylethylamine"",
+            ""amount"": ""2.05 ml"",
+            ""mols"": ""11.72 mmol"",
+            ""smiles"": ""C(C)(C)N(C(C)C)CC""
+        },
+        {
+            ""name"": ""H-Cys(StBu)-OH"",
+            ""amount"": ""2.45 g"",
+            ""mols"": ""11.72 mmol"",
+            ""smiles"": ""N[C@@H](CSSC(C)(C)C)C(=O)O""
+        }
+    ],
+    ""spectators"": [
+        {
+            ""name"": ""dichloromethane"",
+            ""amount"": ""23 ml"",
+            ""mols"": ""N/A"",
+            ""smiles"": ""N/A""
+        },
+        {
+            ""name"": ""1 M hydrochloric acid"",
+            ""amount"": ""N/A"",
+            ""mols"": ""N/A"",
+            ""smiles"": ""N/A""
+        }
+    ],
+    ""products"": [
+        {
+            ""name"": ""(5S,8R)-5-((1H-indol-3-yl)methyl)-1-(9H-fluoren-9-yl)-12,12-dimethyl-3,6-dioxo-2-oxa-10,11-dithia-4,7-diazatridecane-8-carboxylic acid"",
+            ""amount"": ""4.15 g"",
+            ""mols"": ""N/A"",
+            ""smiles"": ""N1C=C(C2=CC=CC=C12)C[C@H](NC(OCC1C2=CC=CC=C2C=2C=CC=CC12)=O)C(N[C@@H](CSSC(C)(C)C)C(=O)O)=O""
+        }
+    ],
+    ""yield"": ""57%"",
+    ""procedures"": [
+        {
+            ""procedure"": ""reaction"",
+            ""chemicals involved"": ""Fmoc-Trp-OH, N-hydroxysuccinimide, 1-(3-dimethylaminopropyl)-3-ethylcarbodiimide hydrochloride, N,N-diisopropylethylamine, H-Cys(StBu)-OH"",
+            ""description"": ""A solution of Fmoc-Trp-OH (5 g, 11.72 mmol) and N-hydroxysuccinimide (1.35 g, 11.72 mmol) in dichloromethane (23 ml) was cooled to 0° C., after which 1-(3-dimethylaminopropyl)-3-ethylcarbodiimide hydrochloride (EDC.HCl, 2.25 g, 11.72 mmol) was added and the reaction solution was stirred at room temperature for 5.5 hours. The reaction solution was cooled to 0° C., after which N,N-diisopropylethylamine (2.05 ml, 11.72 mmol) and H-Cys(StBu)-OH (2.45 g, 11.72 mmol) were added and the reaction solution was stirred at room temperature for 14 hours."",
+            ""temperature"": ""N/A"",
+            ""time"": ""N/A""
+        },
+        {
+            ""procedure"": ""workup"",
+            ""chemicals involved"": ""dichloromethane, 1 M hydrochloric acid"",
+            ""description"": ""Dichloromethane and 1 M hydrochloric acid were added to the reaction mixture, followed by extraction with dichloromethane. The organic layer was washed with 25 wt % brine and dried over sodium sulfate."",
+            ""temperature"": ""N/A"",
+            ""time"": ""N/A""
+        },
+        {
+            ""procedure"": ""purification"",
+            ""chemicals involved"": ""N/A"",
+            ""description"": ""The resulting solution was concentrated under reduced pressure, and the concentration residue was purified by reverse-phase silica gel column chromatography (0.1% aqueous formic acid solution/0.1% formic acid-acetonitrile solution) to afford (5S,8R)-5-((1H-indol-3-yl)methyl)-1-(9H-fluoren-9-yl)-12,12-dimethyl-3,6-dioxo-2-oxa-10,11-dithia-4,7-diazatridecane-8-carboxylic acid (Compound SP602, Fmoc-Trp-Cys(StBu)-OH) (4.15 g, 57%)."",
+            ""temperature"": ""N/A"",
+            ""time"": ""N/A""
+        }
+    ],
+    ""total_time"": ""N/A"",
+    ""product information"": [
+        {
+            ""type"": ""quantitative"",
+            ""descriptor"": ""N/A""
+        }
+    ]
+}"
