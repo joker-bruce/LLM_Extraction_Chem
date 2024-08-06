@@ -1,5 +1,8 @@
 ## Setup
+### Llama
 Please enter the [llama-recipe](https://github.com/joker-bruce/llama-recipes/tree/6c403489373e01fb03ed7bccfc5a80839bf0ce5c) and follow the set up instruction for new environent for finetuning the llama model.
+### GPT
+Please see the interactive Python notebook of GPT3.5 finetuning for reference.
 
 ## Download the models
 Please go the huggingface to download [Llama](https://huggingface.co/meta-llama) as you wish. We use one A100 GPU to finetune [llama-7b](https://huggingface.co/meta-llama/Llama-2-7b-hf) and two A100 GPUs for [llama-13b](https://huggingface.co/meta-llama/Llama-2-13b-hf) with PEFT(LoRA) for 200 epochs.  
