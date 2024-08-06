@@ -30,7 +30,6 @@ def main():
     
     df = pd.read_csv(args.chem_file)
     df['input'] = df['molecules_reactants'] + ' ' + df['molecules_products'] + ' ' + df['text']
-    df = df[:1]#to remove
     for i in range(len(df)):
         ##prompt1
     
