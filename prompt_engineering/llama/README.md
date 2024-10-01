@@ -1,4 +1,4 @@
-## Instruction for prompt_tuning llama
+## Instruction for prompt_engineering llama
 ### Setup environment
 ```
 python -m venv pt_venv
