@@ -2,7 +2,7 @@
 ### Abstract
 In the realm of chemistry, literature texts elucidating chemical reactions are crucial for tasks such as yield prediction, reaction prediction, and reaction condition recommendation. However, extracting structured data from these texts is challenging. Our paper explores the use of Large Language Models (LLMs) to process unstructured chemical reaction data. We manually curated a dataset to fine-tune LLMs, including LLAMA-2 and GPT models, and employed techniques like prompt-tuning and fine-tuning. Our results show that prompt-tuning GPT-4 yields the highest accuracy. We also introduced a verification step using external APIs to authenticate extracted data. This work demonstrates the potential of LLMs in enhancing data-driven chemistry.
 ### Setup
-#### Llama Prompt-tuning
+#### Llama Prompt-Engineering
 Please go for the [prompt-tuning/llama](https://github.com/joker-bruce/LLM_Extraction_Chem/tree/main/prompt_tuning/llama) folder for more details
 #### GPT Prompt-tuning
 Please go for the [prompt-tuning/GPT](https://github.com/joker-bruce/LLM_Extraction_Chem/tree/main/prompt_tuning/GPT) folder for more details
@@ -15,7 +15,7 @@ Go to [Meta Llama download link](https://llama.meta.com/llama-downloads/) to dow
 ### Result
 | **Tuning Type** | **Model & Prompt Type** | **SacreBLEU** | **BLEU-1** | **ROUGE-1** | **ROUGE-2** | **ROUGE-L** |
 |-----------------|-------------------------|---------------|------------|-------------|-------------|-------------|
-| **Prompt-tune** | **LLAMA2-7b No-prompt**  | 14.86         | 0.07       | 0.10        | 0.07        | 0.09        |
+| **Prompt-Engineering** | **LLAMA2-7b No-prompt**  | 14.86         | 0.07       | 0.10        | 0.07        | 0.09        |
 |                 | **LLAMA2-13b No-prompt** | 13.88         | 0.03       | 0.50        | 0.37        | 0.40        |
 |                 | **LLAMA2-70b No-prompt** | 10.38         | 0.03       | 0.35        | 0.23        | 0.26        |
 |                 | **LLAMA2-13b Moderate**  | 24.50         | 0.03       | 0.53        | 0.33        | 0.43        |
@@ -33,7 +33,7 @@ Go to [Meta Llama download link](https://llama.meta.com/llama-downloads/) to dow
 
 | **Tuning Type** | **Model & Prompt Type** | **A** | **B** | **C** |
 |-----------------|-------------------------|-------|-------|-------|
-| **Prompt-tune** | **GPT4.0 Expert**       | **0.98** | 0.59  | 0.56  |
+| **Prompt-Engineering** | **GPT4.0 Expert**       | **0.98** | 0.59  | 0.56  |
 | **Fine-tune**   | **GPT3.5-turbo**        | 0.98  | 0.26  | 0.22  |
 |                 | **LLAMA2-7b**           | 0.96  | **0.62** | **0.60** |
 |                 | **LLAMA2-13b**          | 0.97  | 0.56  | 0.52  |
