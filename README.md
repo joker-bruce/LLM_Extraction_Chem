@@ -4,7 +4,7 @@ In the realm of chemistry, literature texts elucidating chemical reactions are c
 ### Setup
 #### Llama Prompt-Engineering
 Please go for the [prompt-tuning/llama](https://github.com/joker-bruce/LLM_Extraction_Chem/tree/main/prompt_tuning/llama) folder for more details
-#### GPT Prompt-tuning
+#### GPT Prompt-Engineering
 Please go for the [prompt-tuning/GPT](https://github.com/joker-bruce/LLM_Extraction_Chem/tree/main/prompt_tuning/GPT) folder for more details
 #### LLama finetuning
 Please go for the [finetuning](https://github.com/joker-bruce/LLM_Extraction_Chem/tree/main/finetuning) folder for more details.  
